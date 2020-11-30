@@ -11,9 +11,6 @@ if __name__ == '__main__':
 
     hosts = minhaRede.mostrarHostsAtivos()
 
-    #print(hosts)
+    hosts = VarreduraPortas(hosts)
 
-#hosts = ['172.217.162.142']
-
-h = VarreduraPortas(hosts)
-h.varrerPortas()
+    hosts.varrerPortas()
