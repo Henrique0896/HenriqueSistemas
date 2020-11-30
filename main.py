@@ -1,5 +1,6 @@
 
 from Rede import Rede
+from Varredura import VarreduraPortas
 from os import system
 
 if __name__ == '__main__':
@@ -8,6 +9,11 @@ if __name__ == '__main__':
     minhaRede = Rede()
     system('clear')
 
-    minhaRede.mostrarHostsAtivos()
+    hosts = minhaRede.mostrarHostsAtivos()
 
-    minhaRede.varrerPortas()
+    #print(hosts)
+
+#hosts = ['172.217.162.142']
+
+h = VarreduraPortas(hosts)
+h.varrerPortas()
